@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4544438924418031361}
   m_Layer: 0
   m_Name: aereo_ok
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -208,12 +208,12 @@ PolygonCollider2D:
       - {x: 1.4499999, y: 0.385}
       - {x: 1.4499999, y: 0.39499998}
       - {x: 1.42, y: 0.42499998}
-    - - {x: 1.5699999, y: 0.435}
+    - - {x: -0.5700297, y: 0.20807193}
       - {x: 1.54, y: 0.405}
       - {x: 1.54, y: 0.39499998}
       - {x: 1.5699999, y: 0.36499998}
       - {x: 1.61, y: 0.36499998}
-      - {x: 1.64, y: 0.39499998}
+      - {x: -1.4694456, y: 0.31139454}
       - {x: 1.64, y: 0.405}
       - {x: 1.61, y: 0.435}
 --- !u!114 &4544438924418031361

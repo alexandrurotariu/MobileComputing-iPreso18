@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4130044257166424670}
   m_Layer: 8
   m_Name: ostacolo1
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -148,12 +148,15 @@ PolygonCollider2D:
       - {x: 1.01, y: 1.91}
       - {x: 0.97999996, y: 2.03}
       - {x: 0.89, y: 2.11}
-      - {x: 0.5, y: 2.4299998}
+      - {x: 0.9890258, y: 2.3721163}
+      - {x: 0.6947547, y: 2.43117}
+      - {x: -0.66323036, y: 2.3652897}
       - {x: 0.48, y: 2.44}
       - {x: 0.08, y: 2.44}
       - {x: -0.24, y: 2.4199998}
       - {x: -0.57, y: 2.4099998}
-      - {x: -0.78, y: 2.3999999}
+      - {x: -1.2175485, y: 2.3999999}
+      - {x: -1.0513197, y: -2.553508}
       - {x: -0.81, y: 2.3799999}
       - {x: -0.74, y: 2.19}
       - {x: -0.82, y: 2.1499999}

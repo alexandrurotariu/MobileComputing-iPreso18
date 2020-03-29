@@ -17,4 +17,9 @@ public class BackgroundMover : MonoBehaviour
             t.transform.position = new Vector3(0, 0, 10f);
         }
     }
+
+    public void setSpeed(float valore)
+    {
+        speed = valore;
+    }
 }
