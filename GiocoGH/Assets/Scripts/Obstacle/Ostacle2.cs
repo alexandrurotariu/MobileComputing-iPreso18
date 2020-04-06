@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleSpawner : MonoBehaviour
+public class Ostacle2 : MonoBehaviour
 {
 
-    private float secondsLeftTillSpawn = 0;
-    public float spawnSpeed = 30;
+    public float secondsLeftTillSpawn;
+    public float spawnSpeed;
     public float spawnChange;
     public GameObject obstPrefab;
 
@@ -16,9 +16,9 @@ public class ObstacleSpawner : MonoBehaviour
         secondsLeftTillSpawn -= Time.deltaTime;
         int temp = Random.Range(0, 100);
 
-        if(temp <= spawnChange && secondsLeftTillSpawn <= 0)
+        if (temp <= spawnChange && secondsLeftTillSpawn <= 0)
         {
-            Instantiate(obstPrefab, new Vector3(12, Random.Range(-1.65f, -1.65f), 0), Quaternion.identity,transform);
+            Instantiate(obstPrefab, new Vector3(13, Random.Range(-2.7f, -4f), 0), Quaternion.identity, transform);
             secondsLeftTillSpawn = spawnSpeed;
         }
     }

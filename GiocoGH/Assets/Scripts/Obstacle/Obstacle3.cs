@@ -5,8 +5,8 @@ using UnityEngine;
 public class Obstacle3 : MonoBehaviour
 {
 
-    private float secondsLeftTillSpawn = 0;
-    public float spawnSpeed = 30;
+    public float secondsLeftTillSpawn;
+    public float spawnSpeed;
     public float spawnChange;
     public GameObject obstPrefab;
 

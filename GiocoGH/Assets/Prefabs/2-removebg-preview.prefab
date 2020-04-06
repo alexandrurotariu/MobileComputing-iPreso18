@@ -1,5 +1,62 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3114277454030794668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1598760651025306453}
+  - component: {fileID: 7521801107485445088}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Spike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1598760651025306453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3114277454030794668}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0000002589526, y: 0, z: 0}
+  m_LocalScale: {x: 2.172252, y: 2.224554, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8779259304669866028}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &7521801107485445088
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3114277454030794668}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.28236818, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9919057, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &9000663835168832976
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,7 +71,7 @@ GameObject:
   - component: {fileID: 7813995724885908244}
   m_Layer: 8
   m_Name: 2-removebg-preview
-  m_TagString: Spike
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +86,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.37, y: -1.72, z: 0}
   m_LocalScale: {x: 0.46035177, y: 0.4495283, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1598760651025306453}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -93,7 +151,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -125,20 +183,17 @@ PolygonCollider2D:
       - {x: 1.135, y: 1.06}
       - {x: 1.045, y: 1.3}
       - {x: 0.815, y: 1.52}
-      - {x: 1.7027361, y: -1.170159}
-      - {x: 1.6704376, y: 2.172309}
-      - {x: 1.3813049, y: 2.1446433}
-      - {x: -1.756176, y: 2.1356363}
-      - {x: -1.7178785, y: -1.6673511}
-      - {x: 0.16499999, y: 1.6899999}
-      - {x: 0.005, y: 1.67}
-      - {x: -0.044999998, y: 1.81}
-      - {x: -0.145, y: 1.99}
-      - {x: -0.21499999, y: 2.09}
-      - {x: -0.405, y: 2.09}
-      - {x: -0.445, y: 2.05}
-      - {x: -1.8481704, y: 1.9061506}
-      - {x: -0.445, y: 1.78}
+      - {x: 0.98483366, y: 1.3330945}
+      - {x: 0.76484764, y: 1.4347615}
+      - {x: 0.50484264, y: 1.4954754}
+      - {x: 0.5047691, y: 1.4857141}
+      - {x: 0.544727, y: 1.4311897}
+      - {x: 0.5946577, y: 1.3347603}
+      - {x: 0.024888713, y: 1.4552366}
+      - {x: -0.674875, y: 1.4552366}
+      - {x: -1.1646671, y: 1.2309506}
+      - {x: -0.6049304, y: 1.4173795}
+      - {x: -0.844815, y: 1.5035708}
       - {x: -0.525, y: 1.5699999}
       - {x: -0.755, y: 1.4699999}
       - {x: -0.91499996, y: 1.4599999}
@@ -205,9 +260,10 @@ PolygonCollider2D:
       - {x: -1.475, y: -0.71999997}
       - {x: -1.4549999, y: -0.77}
       - {x: -1.485, y: -0.77}
-    - - {x: -0.355, y: 1.66}
-      - {x: -0.325, y: 1.63}
-      - {x: -0.33499998, y: 1.62}
+    - - {x: -0.1450971, y: 1.4040469}
+      - {x: -0.32501402, y: 1.301666}
+      - {x: -0.9247226, y: 1.4764283}
+      - {x: -0.3050138, y: 1.3435707}
 --- !u!114 &7813995724885908244
 MonoBehaviour:
   m_ObjectHideFlags: 0
