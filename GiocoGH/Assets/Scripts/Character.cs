@@ -11,8 +11,8 @@ public class Character : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask groundLayer;
     private bool isTouchingGround;
-    // Start is called before the first frame update
     private bool isdead = false;
+    public ParticleSystem dust;
 
     [SerializeField]
     public GameObject gameOverUI;
@@ -21,19 +21,25 @@ public class Character : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
     }
 
 
 
     void Update()
     {
+
         isTouchingGround = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
         anim.SetBool("isgrounded", isTouchingGround);
         bool jetpackActive = Input.GetButton("Fire1");
 
+        if (isTouchingGround)
+            createDust();
+
         if (jetpackActive && isTouchingGround)
         {
             rb.AddForce(new Vector2(0, jumpForce));
+            createDust();
         }
 
         if (isdead)
@@ -43,6 +49,8 @@ public class Character : MonoBehaviour
        
     }
 
+  
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Spike")
@@ -50,6 +58,11 @@ public class Character : MonoBehaviour
             anim.SetBool("isdead", true);
             isdead = true;
         }
+    }
+
+    void createDust()
+    {
+        dust.Play();
     }
 }
 
