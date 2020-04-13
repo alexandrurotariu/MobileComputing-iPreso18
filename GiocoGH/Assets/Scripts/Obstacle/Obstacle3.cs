@@ -18,7 +18,7 @@ public class Obstacle3 : MonoBehaviour
 
         if (temp <= spawnChange && secondsLeftTillSpawn <= 0)
         {
-            Instantiate(obstPrefab, new Vector3(15, Random.Range(-2.8f, -4f), 0), Quaternion.identity, transform);
+            Instantiate(obstPrefab, new Vector3(15, Random.Range(-2.8f, -4f), -2), Quaternion.identity, transform);
             secondsLeftTillSpawn = spawnSpeed;
         }
     }

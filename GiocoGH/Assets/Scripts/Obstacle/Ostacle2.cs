@@ -18,7 +18,7 @@ public class Ostacle2 : MonoBehaviour
 
         if (temp <= spawnChange && secondsLeftTillSpawn <= 0)
         {
-            Instantiate(obstPrefab, new Vector3(13, Random.Range(-2.7f, -4f), 0), Quaternion.identity, transform);
+            Instantiate(obstPrefab, new Vector3(13, Random.Range(-2.7f, -4f), -2), Quaternion.identity, transform);
             secondsLeftTillSpawn = spawnSpeed;
         }
     }

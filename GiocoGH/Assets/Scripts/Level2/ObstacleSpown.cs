@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle4: MonoBehaviour
+public class ObstacleSpown : MonoBehaviour
 {
 
     public float secondsLeftTillSpawn;
@@ -18,7 +18,7 @@ public class Obstacle4: MonoBehaviour
 
         if (temp <= spawnChange && secondsLeftTillSpawn <= 0)
         {
-            Instantiate(obstPrefab, new Vector3(12, Random.Range(1f, 4f), -2), Quaternion.identity, transform);
+            Instantiate(obstPrefab, new Vector3(12, Random.Range(4.5f, -4.5f), -2), Quaternion.identity, transform);
             secondsLeftTillSpawn = spawnSpeed;
         }
     }
