@@ -17,6 +17,8 @@ public class Character : MonoBehaviour
     [SerializeField]
     public GameObject gameOverUI;
 
+    private float timer = 1f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -45,6 +47,11 @@ public class Character : MonoBehaviour
         if (isdead)
         {
             gameOverUI.SetActive(true);
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                Time.timeScale = 0f;
+            }
         }
        
     }

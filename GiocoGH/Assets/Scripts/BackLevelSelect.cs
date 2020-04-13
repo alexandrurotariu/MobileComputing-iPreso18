@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadLevel2 : MonoBehaviour
+public class BackLevelSelect : MonoBehaviour
 {
-    public void Level2()
+    public void backToLevels()
     {
-        SceneManager.LoadScene("Level2");
-        
+
+        SceneManager.LoadScene("LevelSelect");
     }
 }
