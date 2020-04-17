@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CountdownTimerScript : MonoBehaviour
 {
-    private float timer = 30f;
+    private float timer = 10.04f;
     public Text timerSeconds;
     public GameObject winPanel;
 

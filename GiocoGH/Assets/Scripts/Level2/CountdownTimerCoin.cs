@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class CountdownTimerCoin : MonoBehaviour
 {
-    private float timer = 30f;
+    private float timer = 60.04f;
     private Text timerSeconds;
     public GameObject youWinPanel;
     public GameObject gameOverPanel;
