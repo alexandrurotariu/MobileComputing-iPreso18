@@ -15,16 +15,20 @@ public class DeleyedStartScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+  
     }
 
     IEnumerator StartDelay()
     {
-        Time.timeScale = 0;
+        
+        Time.timeScale = 0f;
         float pauseTime = Time.realtimeSinceStartup + 6.45f;
-        while (Time.realtimeSinceStartup < pauseTime)
+        
+        while (Time.realtimeSinceStartup < pauseTime){ 
             yield return 0;
+        }
+       
         countDown.gameObject.SetActive(false);
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
     }
 }

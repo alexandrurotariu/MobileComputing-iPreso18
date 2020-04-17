@@ -19,33 +19,42 @@ public class Character : MonoBehaviour
 
     private float timer = 1f;
 
+    public AudioSource jumpSound;
+    public AudioSource runSound;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
     }
-
-
 
     void Update()
     {
-
         isTouchingGround = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
         anim.SetBool("isgrounded", isTouchingGround);
         bool jetpackActive = Input.GetButton("Fire1");
 
+
         if (isTouchingGround)
+        {
             createDust();
+            if (!runSound.isPlaying)
+                runSound.Play();     
+        }
+        else
+            runSound.Stop();
+
 
         if (jetpackActive && isTouchingGround)
         {
             rb.AddForce(new Vector2(0, jumpForce));
             createDust();
+            jumpSound.Play();
         }
 
         if (isdead)
         {
+            runSound.Stop();
             gameOverUI.SetActive(true);
             timer -= Time.deltaTime;
             if (timer <= 0)

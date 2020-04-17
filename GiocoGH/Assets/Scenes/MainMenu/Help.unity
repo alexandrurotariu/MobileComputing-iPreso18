@@ -255,8 +255,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 406.6, y: 195}
+  m_AnchoredPosition: {x: -103.7, y: -21.8}
+  m_SizeDelta: {x: 877.26, y: 367.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &523930149
 MonoBehaviour:
@@ -278,7 +278,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8153f5e6f2445c4449c5b063bbfb76d8, type: 3}
-    m_FontSize: 70
+    m_FontSize: 43
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -289,7 +289,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'DA AGGIUNGERE
+  m_Text: 'YOUR GOAL IS TO GRADUATE.
+
+    TRY TO GET TO THE EXAM BY JUMPING THE OBSTACLES
+    AND TAKE THE HIGHEST POSSIBLE MARK, AND REMEMBER, TO PASS THE EXAM YOU MUST TAKE
+    AT LEAST 18!
 
 '
 --- !u!222 &523930150
@@ -326,7 +330,7 @@ Transform:
   m_GameObject: {fileID: 602856378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1013329065}
   m_RootOrder: 0
@@ -418,8 +422,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 25}
-  m_SizeDelta: {x: 404.4, y: 177.8}
+  m_AnchoredPosition: {x: 109, y: -31}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &936576200
 Animator:
@@ -896,7 +900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -160}
+  m_AnchoredPosition: {x: 0, y: -287}
   m_SizeDelta: {x: 244.4, y: 164.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2077182696
