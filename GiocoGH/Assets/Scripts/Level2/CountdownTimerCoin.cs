@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class CountdownTimerCoin : MonoBehaviour
 {
-    private float timer = 60.04f;
+    private float timer = 15.04f;
     private Text timerSeconds;
     public GameObject youWinPanel;
     public GameObject gameOverPanel;
@@ -23,7 +23,7 @@ public class CountdownTimerCoin : MonoBehaviour
     {
         timer -= Time.deltaTime;
         timerSeconds.text = timer.ToString("f1");
-        if (timer <= 0 && ScoreTextScript.coinAmount >= 18)
+        if (timer <= 0 && ScoreTextScript.coinAmount <= 18)
         {
             youWinPanel.SetActive(true);
             Time.timeScale = 0f;

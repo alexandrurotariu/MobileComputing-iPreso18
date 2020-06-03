@@ -40,7 +40,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461633718612248218}
   serializedVersion: 6
-  lengthInSec: 0.1
+  lengthInSec: 0.3
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -865,7 +865,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 50
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4882,7 +4882,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.14, y: 5.64}
+    oldSize: {x: 2.98, y: 5.64}
     newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
